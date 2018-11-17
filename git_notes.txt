@@ -1,0 +1,83 @@
+git init
+Initialized empty Git repository in /home/kunal/git_practice/.git/
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ echo "Hello Git and GitHub" >> README.txt
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ ls
+README.txt
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git add README.txt 
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.txt
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git commit -m "First commit"
+[master (root-commit) 7ee1eed] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git status
+On branch master
+nothing to commit, working directory clean
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git log
+commit 7ee1eed94163642aebef473fd6bcd21daaae8ce7
+Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Date:   Sat Nov 17 12:01:43 2018 +0530
+
+    First commit
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ vi README.txt 
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ echo "# git practice" >> README.txt 
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git add .
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.txt
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git commit -m "first commit"
+[master 1b7df0c] first commit
+ 1 file changed, 1 insertion(+)
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git status
+On branch master
+nothing to commit, working directory clean
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git log
+commit 1b7df0cb6a2124f91e9714177d04893801cb59a9
+Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Date:   Sat Nov 17 12:19:30 2018 +0530
+
+    first commit
+
+commit 7ee1eed94163642aebef473fd6bcd21daaae8ce7
+Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Date:   Sat Nov 17 12:01:43 2018 +0530
+
+    First commit
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git remote add origin https://github.com/kunalwadhwa1991/git_practice.git
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git status
+On branch master
+nothing to commit, working directory clean
+
+kunal@kunal-HP-ProBook-440-G3:~/git_practice$ git push -u origin master
+Username for 'https://github.com': kunalwadhwa1991
+Password for 'https://kunalwadhwa1991@github.com': 
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 471 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/kunalwadhwa1991/git_practice/pull/new/master
+remote: 
+To https://github.com/kunalwadhwa1991/git_practice.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
