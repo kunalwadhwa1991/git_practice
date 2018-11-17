@@ -1,0 +1,53 @@
+1) git init
+Initialized empty Git repository in /home/kunal/git_practice/.git/
+
+2) echo "Hello Git and GitHub" >> README.txt
+
+3) git add README.txt
+
+4) git status
+
+5) git commit -m "First commit"
+
+6) git add .
+
+7) git log
+commit 1b7df0cb6a2124f91e9714177d04893801cb59a9
+Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Date:   Sat Nov 17 12:19:30 2018 +0530
+
+    first commit
+
+commit 7ee1eed94163642aebef473fd6bcd21daaae8ce7
+Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Date:   Sat Nov 17 12:01:43 2018 +0530
+
+    First commit
+
+8) git remote add origin https://github.com/kunalwadhwa1991/git_practice.git
+
+9) git push -u origin master
+
+10) git config --global user.name "Your Name"
+To set your name
+
+11) git config --global user.email "name@domain.example"
+To set your email address
+
+12) git config --global --edit
+To edit config file
+
+git config --local --edit
+git config --system --edit
+
+13) ~/.gitconfig
+To look at your git config file
+
+14) .git/config
+Local config is in repository's .git/config file
+
+15) git config user.name "Your name"
+To set your username for single repository
+
+
+
