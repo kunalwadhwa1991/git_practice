@@ -79,5 +79,6 @@ git reset commit_SHA: Resets to a previous commit in your commit history.
 5) git add filename_1 filename_2
 To add multiple files to the staging area with a single command
 
+6)git checkout -- filename
 
- 
+It does the same exact thing that git checkout HEAD filename does. 
