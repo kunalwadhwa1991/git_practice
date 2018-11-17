@@ -55,6 +55,8 @@ Backtrack commands
 1) git show HEAD
 To see the HEAD commit
 
+git show HEAD <filename>
+
 2) git checkout HEAD filename
 will restore the file in your working directory to look exactly as it did when you last made a commit
 
