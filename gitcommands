@@ -13,13 +13,13 @@ Initialized empty Git repository in /home/kunal/git_practice/.git/
 
 7) git log
 commit 1b7df0cb6a2124f91e9714177d04893801cb59a9
-Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Author: kunal.wadhwa 
 Date:   Sat Nov 17 12:19:30 2018 +0530
 
     first commit
 
 commit 7ee1eed94163642aebef473fd6bcd21daaae8ce7
-Author: kunal.wadhwa <kunal.wadhwa@naukri.com>
+Author: kunal.wadhwa 
 Date:   Sat Nov 17 12:01:43 2018 +0530
 
     First commit
