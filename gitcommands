@@ -142,3 +142,8 @@ git checkout branch_name: Used to switch from one branch to another.
 git merge branch_name: Used to join file changes from one branch to another.
 git branch -d branch_name: Deletes the branch specified.
 
+
+Some more commands:
+1) git branch -D branchname
+You'll need the -D option, because these feature branches were never merged into master.
+
