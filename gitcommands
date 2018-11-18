@@ -147,3 +147,57 @@ Some more commands:
 1) git branch -D branchname
 You'll need the -D option, because these feature branches were never merged into master.
 
+
+
+git teamwork - generalizations
+Remote:
+A remote is a shared Git repository that allows multiple collaborators to work on the same Git project from different locations. Collaborators work on the project independently, and merge changes together when they are ready to do so.
+
+
+1) git clone
+git clone remote_location clone_name
+
+In this command: 
+
+remote_location tells Git where to go to find the remote. This could be a web address, or a filepath, such as:
+/Users/teachers/Documents/some-remote
+clone_name is the name you give to the directory in which Git will clone the repository
+
+One thing that Git does behind the scenes when you clone science-quizzes is give the remote address the name origin, so that you can refer to it more conveniently. In this case, Sally's remote is origin.
+
+2) git remote -v
+ see a list of a Git project's remotes with the command:
+
+origin    /home/ccuser/workspace/curriculum/science-quizzes (fetch)
+origin    /home/ccuser/workspace/curriculum/science-quizzes (push)
+Git lists the name of the remote, origin, as well as its location.
+Git automatically names this remote origin, because it refers to the remote repository of origin. However, it is possible to safely change its name.
+The remote is listed twice: once for (fetch) and once for (push). 
+
+3) git fetch
+An easy way to see if changes have been made to the remote and bring the changes down to your local copy is with:
+
+This command will not merge changes from the remote into your local repository. It brings those changes onto what's called a remote branch.
+
+Even though Sally's new commits have been fetched to your local copy of the Git project, those commits are on the origin/master branch. Your local master branch has not been updated yet, so you can't view or make changes to any of the work she has added.
+
+use the git merge command to integrate origin/master into your local master branch. The command: git merge origin/master
+
+
+4) git push origin your_branch_name
+will push your branch up to the remote, origin.
+
+
+
+Let's review.
+
+A remote is a Git repository that lives outside your Git project folder. Remotes can live on the web, on a shared network or even in a separate folder on your local computer.
+The Git Collaborative Workflow are steps that enable smooth project development when multiple collaborators are working on the same Git project.
+We also learned the following commands
+
+git clone: Creates a local copy of a remote.
+git remote -v: Lists a Git project's remotes.
+git fetch: Fetches work from the remote into the local copy.
+git merge origin/master: Merges origin/master into your local branch.
+git push origin <branch_name>: Pushes a local branch to the origin remote.
+Git projects are usually managed on Github, a website that hosts Git projects for millions of users. With Github you can access your projects from anywhere in the world by using the basic workflow you learned here.
